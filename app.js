@@ -13,9 +13,9 @@ require('./app/routes')(app); // Routes are imported
 
 // Only start the server if this file is run directly (not imported by tests)
 if (require.main === module) {
-  const server = http.createServer(app).listen(app.get('port'), function(){
-    console.log('The application is running on port ' + app.get('port'));
-  });
+	http.createServer(app).listen(app.get('port'), function () {
+		console.log('The application is running on port ' + app.get('port')); // eslint-disable-line no-console
+	});
 }
 
 module.exports = app;
