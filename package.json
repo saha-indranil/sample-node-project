@@ -1,0 +1,21 @@
+{
+  "name": "sample-node-project",
+  "version": "1.0.0",
+  "description": "Sample Node.js Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "lint": "eslint . --ext .js"
+  },
+  "author": "Indranil Saha",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
