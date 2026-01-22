@@ -17,5 +17,10 @@
     "eslint": "^8.57.0",
     "jest": "^30.2.0",
     "supertest": "^7.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "forceExit": true,
+    "detectOpenHandles": true
   }
 }

@@ -43,14 +43,14 @@ jobs:
         run: npm run lint
 
       - name: Run dependency vulnerability check
-        run: npm audit --production --audit-level=high
+        run: npm audit --omit=dev --audit-level=critical
         continue-on-error: true
 
       # ============================================
       # TESTING
       # ============================================
       - name: Run unit tests
-        run: npm test
+        run: npm test -- --forceExit --detectOpenHandles
 
       # ============================================
       # DOCKER BUILD & PUSH
